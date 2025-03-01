@@ -33,6 +33,7 @@ image:
 
 **欧拉函数**：$\varphi(n)$ 为在小于等于n的正整数中有多少个数与n互质。
 > 欧拉函数的一些性质：
+> 
 > 	1.  $\varphi(1) = 1$ 
 > 
 > 	2. 如果n为质数，则 $\varphi(n) = n - 1$ 
@@ -42,6 +43,7 @@ image:
 > 	4. 如果n为两个互质整数的积，即 $n = p \times q$ ，则 $\varphi(n) = \varphi(p) * \varphi(q)$ 。证明需要用到*中国剩余定理*，不做介绍，其实并不难。
 > 
 > 	5. 如果 $n = p_1^{k1} \times p_2^{k2} ...$，则 $\varphi(n) = \varphi(p_1^{k1}) \times ...$ 
+> 
 
 
 **欧拉定理**：如果两个数 a 和 n 互质，则 $a^{\varphi(n)} \equiv 1 (mod \ n)$ ，此处证明过于复杂，不做介绍。特殊情况费马小定理 p 是质数，$a^{p-1} \equiv 1 (mod \ n)$ .
