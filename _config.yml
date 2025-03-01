@@ -104,7 +104,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: 
+avatar:
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -152,10 +152,16 @@ pwa:
     # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+  # 新增 Service Worker 更新策略
+  serviceWorker:
+    # 缓存名称（修改后会触发更新）
+    cacheName: my-cache-v1
+    # 定期检查更新的间隔（单位：秒）
+    updateInterval: 300 # 每 5 分钟检查一次
+    # 缓存策略：优先使用网络，失败时用缓存
+    networkFirst: true
 
 paginate: 10
-
-
 
 # ------------ The following options are not recommended to be modified ------------------
 
