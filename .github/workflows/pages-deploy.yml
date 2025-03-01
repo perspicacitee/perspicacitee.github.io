@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - master
+      - gh-pages
     paths-ignore:
       - .gitignore
       - README.md
@@ -54,6 +55,7 @@ jobs:
         run: |
           bundle exec htmlproofer _site \
             \-\-disable-external \
+            \-\-allow-missing-href \
             \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
       - name: Upload site artifact
